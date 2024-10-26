@@ -1,9 +1,6 @@
 package cz.kurz.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,20 +13,51 @@ public class ExchangeRateEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String shortName; // ID může být např. zkratka měny
+    private Long id;
+
+    @Column(nullable = false)
+    private String shortName;
+
+    @Column(nullable = false)
     private LocalDateTime validFrom; // Datum a čas
+
+    @Column(nullable = false)
     private String name;
+
+    @Column(nullable = false)
     private String country;
+
+    @Column(nullable = false)
     private double move;
+
+    @Column(nullable = false)
     private int amount;
+
+    @Column(nullable = false)
     private double valBuy;
+
+    @Column(nullable = false)
     private double valSell;
+
+    @Column(nullable = false)
     private double valMid;
+
+    @Column(nullable = false)
     private double currBuy;
+
+    @Column(nullable = false)
     private double currSell;
+
+    @Column(nullable = false)
     private double currMid;
+
+    @Column(nullable = false)
     private int version;
+
+    @Column(nullable = false)
     private double cnbMid;
+
+    @Column(nullable = false)
     private double ecbMid;
 
 }
