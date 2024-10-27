@@ -18,7 +18,7 @@ public class ExchangeRateController {
     private ExchangeRateService exchangeRateService;
 
     @GetMapping("")
-    public List<ExchangeRateDTO> getExchangeRates(@RequestParam boolean usedb) {
+    public List<ExchangeRateDTO> getExchangeRates(@RequestParam("useDatabase") boolean usedb) {
         return exchangeRateService.getExchangeRates(usedb);
     }
 
