@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/tvoje_databaze
-    username: root
-    password:
+    url: jdbc:postgresql://dpg-csfbenbtq21c738m51fg-a:5432/my_exchange_rate_app
+    username: my_exchange_rate_app_user
+    password: Zqu0Afcg885EksbErLyPy5WhOVZarbIM
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
