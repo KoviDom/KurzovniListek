@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Zkompiluj projekt pomocí Maven Wrapperu
-RUN ./mvnw clean package
+RUN ./mvn clean package
 
 # Nastav port, na kterém bude aplikace naslouchat
 EXPOSE 8080
