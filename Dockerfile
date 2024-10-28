@@ -14,4 +14,4 @@ RUN mvn clean package
 EXPOSE 8080
 
 # Spusť aplikaci
-CMD ["java", "-jar", "target/KurzovniListek-1.0.jar"]
+CMD ["java", "-jar", "target/KurzovniListek-1.0-SNAPSHOT.jar"]
