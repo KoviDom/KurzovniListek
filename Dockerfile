@@ -1,5 +1,5 @@
 # Použij oficiální Java runtime obraz
-FROM openjdk:17-jdk-slim
+FROM maven:3.8.7-eclipse-temurin-19
 
 # Nastav pracovní adresář v kontejneru
 WORKDIR /app
