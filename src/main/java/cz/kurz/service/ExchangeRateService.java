@@ -7,9 +7,9 @@ import java.util.List;
 public interface ExchangeRateService {
 
     /**
-     * Fetches all exchange rates
+     * Fetchuji vsechny exchange rates
      * @param useDb
-     * @return List of all Exchange Rates
+     * @return vraci list všech Exchange Rates
      */
     List<ExchangeRateDTO> getExchangeRates(boolean useDb);
 
